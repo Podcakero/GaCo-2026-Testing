@@ -4,3 +4,6 @@
 [submodule "Github Actions"]
 	path = Github Actions
 	url = https://github.com/Podcakero/Github-Actions.git
+[submodule "Github Repo Template"]
+	path = Github Repo Template
+	url = https://github.com/Podcakero/Github-Repo-Template.git
