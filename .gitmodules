@@ -1,3 +1,6 @@
 [submodule "State Space Model Control"]
 	path = State Space Model Control
 	url = https://github.com/Podcakero/State-Space-Model-Control.git
+[submodule "Github Actions"]
+	path = Github Actions
+	url = https://github.com/Podcakero/Github-Actions.git
