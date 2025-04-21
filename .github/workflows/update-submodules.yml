@@ -1,0 +1,21 @@
+name: Update Submodules
+
+on:
+  repository_dispatch:
+    types: [submodule-update]
+jobs:
+  update-submodules:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Sync Submodules
+        run: git submodule sync
+      - name: Checkout submodules
+        run: git submodule update --init --recursive --remote
+      - name: Push submodule changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update submodules

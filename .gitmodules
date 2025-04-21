@@ -1,0 +1,3 @@
+[submodule "State Space Model Control"]
+	path = State Space Model Control
+	url = https://github.com/Podcakero/State-Space-Model-Control.git
